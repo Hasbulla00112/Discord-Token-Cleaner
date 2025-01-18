@@ -118,11 +118,3 @@ The script includes built-in rate limit handling:
 ## Legal Notice
 
 This tool is for educational purposes only. Users are responsible for ensuring compliance with Discord's Terms of Service and API guidelines.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
