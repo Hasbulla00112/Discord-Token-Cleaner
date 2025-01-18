@@ -1,0 +1,13 @@
+{
+    "delay": 0.5,
+    "proxies": true,
+    "set_language": true,
+    "leave_servers": true,
+    "clean_dms": true,
+    "remove_friends": true,
+    "decline_message_requests": true,
+    "remove_connections": true,
+    "unblock_users": true,
+    "decline_friend_requests": true,
+    "cancel_outgoing_requests": true
+}
