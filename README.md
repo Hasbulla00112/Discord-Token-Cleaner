@@ -58,22 +58,6 @@ pip install tls_client colorama
 4. Create a `tokens.txt` file with your Discord tokens (one per line)
 5. If using proxies, create a `proxies.txt` file with your proxy list
 
-## Configuration Options
-
-| Option | Type | Description |
-|--------|------|-------------|
-| delay | number | Delay between actions in seconds |
-| proxies | boolean | Enable/disable proxy support |
-| set_language | boolean | Set account language to English (US) |
-| unblock_users | boolean | Unblock all blocked users |
-| leave_servers | boolean | Leave all servers (or delete if owner) |
-| clean_dms | boolean | Close all DM channels |
-| decline_message_requests | boolean | Decline all pending message requests |
-| remove_friends | boolean | Remove all friends |
-| decline_friend_requests | boolean | Decline all incoming friend requests |
-| cancel_outgoing_requests | boolean | Cancel all outgoing friend requests |
-| remove_connections | boolean | Remove all account connections |
-
 ## Proxy Support
 
 The script supports both authenticated and non-authenticated proxies in the following formats:
