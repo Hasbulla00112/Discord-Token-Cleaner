@@ -4,7 +4,7 @@ A powerful and configurable Python script for cleaning Discord account data. Thi
 
 ## Showcase
 
-![image](https://github.com/user-attachments/assets/84fcf633-a2ec-43a3-826d-a6193c1cde10)
+  ![image](https://github.com/user-attachments/assets/84fcf633-a2ec-43a3-826d-a6193c1cde10)
 
 ## Features
 
