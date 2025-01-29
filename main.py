@@ -18,6 +18,7 @@ def load_config():
             'delay': 1,
             'proxies': False,
             'set_language': True,
+            'set_dark_mode': True,  # New config option
             'unblock_users': True,
             'leave_servers': True,
             'clean_dms': True,
@@ -415,6 +416,21 @@ class DiscordCleaner:
             print(f"{Fore.RED}Error removing connection: {str(e)}")
             return False
 
+    def set_dark_mode(self, token):
+        """Set account theme to dark mode"""
+        try:
+            self.session.headers['authorization'] = token
+            payload = {
+                "theme": "dark"  # Valid values: "dark" or "light"
+            }
+            
+            response = self.make_request('patch', 'https://discord.com/api/v9/users/@me/settings', json=payload)
+            return response.status_code == 200
+            
+        except Exception as e:
+            print(f"{Fore.RED}Error setting dark mode: {str(e)}")
+            return False
+
     def process_token(self, token):
         try:
             email = token.split(':')[0]
@@ -426,6 +442,14 @@ class DiscordCleaner:
             if not self.check_token(token):
                 print(f"{Fore.RED}Token is invalid!")
                 return False
+
+            # Set Dark Mode if enabled in config
+            if self.config.get('set_dark_mode', False):
+                print(f"\n{Fore.CYAN}Setting dark mode...")
+                if self.set_dark_mode(token):
+                    print(f"{Fore.GREEN}Successfully set dark mode")
+                else:
+                    print(f"{Fore.RED}Failed to set dark mode")
 
             # Set Language to English (US)
             if self.config['set_language']:
@@ -574,6 +598,7 @@ def main():
         'delay', 
         'proxies',
         'set_language',
+        'set_dark_mode',  # Added to required keys
         'unblock_users',
         'leave_servers',
         'clean_dms',
