@@ -1,14 +1,21 @@
 {
-    "delay": 0.5,
+    "thread_count": 20,
+    "delay": 1,
     "proxies": true,
     "set_language": true,
     "set_dark_mode": true,
+    "unblock_users": true,
     "leave_servers": true,
     "clean_dms": true,
-    "remove_friends": true,
     "decline_message_requests": true,
-    "remove_connections": true,
-    "unblock_users": true,
+    "remove_friends": true,
     "decline_friend_requests": true,
-    "cancel_outgoing_requests": true
-}
+    "cancel_outgoing_requests": true,
+    "remove_connections": true,
+    "remove_friend_suggestions": true,
+    "remove_avatar": true,
+    "clear_bio": true,
+    "clear_profile_info": true,
+    "clear_status": true,
+    "set_invisible": true
+  }
